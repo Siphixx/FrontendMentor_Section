@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  
+  <style>
+    :root {
+      --bg-color: hsl(47, 88%, 63%);
+      --bg-card-color: hsl(0, 0%, 100%);
+      --f-clr-800: hsl(0, 0%, 7%);
+      --f-clr-400: hsl(0, 0%, 50%);
+      --fs-800: 1.1235rem;
+      --fs-400: 1rem;
+      --fs-200: 0.8rem;
+      --fw-800: 800;
+      --fw-600: 600;
+      --line-height: 1.4;
+      --ff: Figtree;
+    }
+
+    body {
+      display: grid;
+      place-content: center;
+      height: 100vh;
+      background-color: var(--bg-color);
+      font-family: var(--ff);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .card {
+      max-width: 315px;
+      border: 0.5px solid #000;
+      background-color: var(--bg-card-color);
+      padding: 20px;
+      border-radius: 25px;
+      box-shadow: 8px 8px;
+    }
+
+    .article-img {
+      border-radius: 10px;
+      margin-bottom: 20px;
+
+    }
+
+    button {
+      background-color: var(--bg-color);
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: var(--fs-200);
+      padding: 3px 10px;
+      font-weight: var(--fw-800);
+    }
+
+    .card-content {
+      font-size: var(--fs-400);
+      font-weight: var(--fw-600);
+    }
+
+    .card-content .info {
+      color: var(--f-clr-400);
+      line-height: var(--line-height);
+      text-align: left;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      font-weight: var(--fw-800);
+      gap: 10px;
+    }
+
+    .profile div {
+      width: 40px;
+    }
+
+
+
+    .attribution {
+      margin-top: 5rem;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="card">
+
+    <img class="article-img" src="assets/images/illustration-article.svg" alt="">
+
+    <div class="card-content">
+      <button>Learning</button>
+      <p>Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+
+      <p class="info">These languages are the backbone of every website, defining structure, content, and presentation.
+      </p>
+
+      <div class="profile">
+        <div>
+          <img src="assets/images/image-avatar.webp" alt="">
+        </div>
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Siphixx">Yhadira</a>.
+  </div>
+
+
+</body>
+
+</html>
